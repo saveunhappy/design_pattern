@@ -6,6 +6,11 @@ public class Test {
     public static void main(String[] args) throws IOException, ClassNotFoundException {
 //        LazySingleton lazySingleton = LazySingleton.getInstance();
 //        System.out.println(lazySingleton);
+        System.out.println("main" + ThreadLocalInstance.getInstance());
+        System.out.println("main" + ThreadLocalInstance.getInstance());
+        System.out.println("main" + ThreadLocalInstance.getInstance());
+        System.out.println("main" + ThreadLocalInstance.getInstance());
+        System.out.println("main" + ThreadLocalInstance.getInstance());
         Thread t1 = new Thread(new T());
         Thread t2 = new Thread(new T());
         t1.start();
